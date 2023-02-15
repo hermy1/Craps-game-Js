@@ -6,8 +6,7 @@
           content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords"
           content="List,keywords,with,comma,separated,values"/>
-    <!-- <meta http-equiv="refresh" content= /> -->
-    <title>Crapps Game</title>
+    <title>Craps Game</title>
     <link type="image/x-icon" rel="icon"
           href="images/favicon2.ico" />
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -38,22 +37,21 @@
                 </div>
         </header>
       <main>
-        <section class="container">
+        <section class="container" id="main-body">
             <div class="row">
+              <div class="col-lg-2"></div>
               <div class="col-lg-8 col-sm-12 col-xs-12">
                 <div class="card text-center mt-5">
                   <div class="card-header">
-                    <!-- Featured -->
-                    <button type="button" class="btn btn-">
+                    <button type="button" class="btn text-left">
                       Total Points: <span class="badge bg-dark" id="point"></span>
                     </button>
                   </div>
                   <div class="card-body game-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <img src="/img/1.png" class="img-thumbnail" alt="...">
-                    <img src="/img/6.png" class="img-thumbnail" alt="...">
-                    
+                    <h5 class="card-title">It all starts with a Roll</h5>
+                    <p class="card-text">The rules are simple just click roll and see what you get</p>
+                    <img src="" id="die1" class="img-thumbnail" alt="...">
+                    <img src="" id="die2" class="img-thumbnail" alt="...">
                     <div class="row m-3 mt-4">
                       <div class="col-lg-4 col-md-4">
                         <div class="card">
@@ -83,29 +81,40 @@
                    
                   </div>
                   <div class="card-footer text-muted">
-                    don't play too hard!
+                    Wins: <span class="badge bg-success" id="wins"></span>
+                    Loses: <span class="badge bg-danger" id="losses"></span>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8 mt-4 col-sm-12 col-xs-12">
-              <div class=" mb-4 text-center d-grid d-md-block d-sm-block">
-                <button type="button" id="craps" class="btn btn-primary btn-lg">Start</button>
-                <button type="button" id="reset" class="btn btn-primary btn-lg">Reset</button>
+              <div class="row">
+                <div class="col-lg-12 mt-4 col-sm-12 col-xs-12">
+                <div class=" mb-4 text-center d-grid d-md-block d-sm-block">
+                  <button type="button" id="craps" class="btn btn-primary btn-lg m-2">Roll</button> 
+                  <button type="button" id="reset" class="btn btn-primary btn-lg m-2">Reset</button>
+                </div>
               </div>
-            </div>
+              </div>
             </div>
         </section>
       </main>
       <aside>
-          
-      
+    
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="/img/notifications.png" width="8%" class="rounded me-2" alt="...">
+              <strong class="me-auto">Notification</strong>
+              <small>Now</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="notification">
+            </div>
+          </div>
+        </div>
       </aside>
       <footer class="text-center text-white">
-        <div>
-          © 2020 Copyright:
-          <p class="text-white" href="#">Herman</p>
+        <div class="text-dark">
+          <p class="text-dark">© 2020 Copyright: Herman</p>
         </div>
       </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

@@ -3,7 +3,7 @@
 
 Author: Herman 
 Class: inf255
-HMW: 2
+HMW: 3
 
 */
 
@@ -43,12 +43,12 @@ nav{
     color: var(--orangeDark) !important;
 }
 .game-body > img{
-  width: 10%;
+  width: 15vh;
 }
 
+/* #main-body{
+  height: 100vh;
+} */
 footer{
-    background-color: var(--dark);
-    padding: 3rem;
-    justify-content: space-between;
-    align-items: center;
+    
 }
