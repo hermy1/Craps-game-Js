@@ -45,7 +45,7 @@
                   <div class="card-header">
                     <!-- Featured -->
                     <button type="button" class="btn btn-">
-                      Total Points: <span class="badge bg-secondary">4</span>
+                      Total Points: <span class="badge bg-dark" id="point"></span>
                     </button>
                   </div>
                   <div class="card-body game-body">
@@ -53,25 +53,37 @@
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <img src="/img/1.png" class="img-thumbnail" alt="...">
                     <img src="/img/6.png" class="img-thumbnail" alt="...">
-                    <br>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    <ul class="list-group">
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                        A list item
-                        <span class="badge bg-primary rounded-pill">14</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                        A second list item
-                        <span class="badge bg-primary rounded-pill">2</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center">
-                        A third list item
-                        <span class="badge bg-primary rounded-pill">1</span>
-                      </li>
-                    </ul>
+                    
+                    <div class="row m-3 mt-4">
+                      <div class="col-lg-4 col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h3>Roll</h3>
+                            <span class="badge bg-primary rounded-pill" id="roll_number"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h3>Status</h3>
+                            <span class="badge bg-primary rounded-pill" id="game_status"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h3>Sum</h3>
+                            <span class="badge bg-primary rounded-pill" id="sum"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
                   </div>
                   <div class="card-footer text-muted">
-                    2 days ago
+                    don't play too hard!
                   </div>
                 </div>
               </div>

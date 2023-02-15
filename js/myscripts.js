@@ -73,15 +73,30 @@ let point = document.getElementById("point");
 let roll_number = document.getElementById("roll_number");
 let game_status = document.getElementById("game_status");
 
-
+window.addEventListener("load", function (e) {
+  // die1.innerHTML = craps.die1.face;
+  // die2.innerHTML = craps.die2.face;
+  sum.innerHTML = craps.sum;
+  point.innerHTML = craps.point;
+  roll_number.innerHTML = craps.roll_number;
+  game_status.innerHTML = craps.game_status;
+})
 start.addEventListener("click", function (e) {
   craps.roll();
+  point.innerHTML = craps.point
+  sum.innerHTML = craps.sum;
+  game_status.innerHTML = craps.game_status;
+  roll_number.innerHTML = craps.roll_number;
   console.log(craps);
 
 
 });
 reset.addEventListener("click", function (e) {
   craps.resetGame();
+  point.innerHTML = craps.point
+  sum.innerHTML = craps.sum;
+  game_status.innerHTML = craps.game_status;
+  roll_number.innerHTML = craps.roll_number;
   console.log(craps);
 });
 // function roll(){
